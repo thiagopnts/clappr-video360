@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>360 playback for Clappr</title>
+</head>
+<body>
+    <div id="player"></div>
+   <script type="text/javascript" charset="utf-8" src="./node_modules/clappr/dist/clappr.min.js"> </script>
+   <script type="text/javascript" charset="utf-8" src="./node_modules/three.js/build/three.min.js"> </script>
+   <script type="text/javascript" charset="utf-8" src="./playback360.js"> </script>
+   <script type="text/javascript" charset="utf-8">
+var p = new Clappr.Player({
+    source: 'http://thiago.me/360/starwars.mp4#360',
+    height: 529,
+    width: 940,
+    plugins: {
+        playback: [Playback360]
+    },
+    parentId: '#player',
+});
+p.getPlugin('click_to_pause').disable();
+   </script>
+</body>
+</html>
