@@ -1,6 +1,10 @@
 # 360 Video
 :warning: THIS IS A HIGHLY EXPERIMENTAL PLUGIN :warning:
 
+
+<img src="360.gif" height="480"></img>
+
+
 [Demo](https://thiago.me/clappr-360)
 
 360 Video is a plugin for playing 360 videos with Clappr, just like in Facebook.
@@ -29,5 +33,3 @@ p.getPlugin('click_to_pause').disable();
 ```
 
 Use the `#360` hash to tell the plugin that your `.mp4` is 360 compatible.
-A 360 compatible mp4 file looks like this:
-![](./360mp4.jpg)
