@@ -1,7 +1,7 @@
 # clappr-video360
 
 
-<img src="360.gif" height="480"></img>
+<img src="360.gif" height="360" width="640"></img>
 
 
 [Demo](https://thiago.me/clappr-360)
@@ -19,8 +19,12 @@ $ npm run build
 ```
 
 ### Using:
+Grap the code:
+```bash
+$ npm install clappr clappr-video360
+```
+Add the library and Clappr to your page:
 
-Add the library with Clappr to your page:
 ```html
 <script type="text/javascript" charset="utf-8" src="node_modules/clappr/dist/clappr.min.js"> </script>
 <script type="text/javascript" charset="utf-8" src="node_modules/clappr-video360/dist/clappr-video360.min.js"> </script>
