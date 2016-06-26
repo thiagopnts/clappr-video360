@@ -2,20 +2,19 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>360 playback for Clappr</title>
+    <title>clappr-video360</title>
 </head>
 <body>
     <div id="player"></div>
    <script type="text/javascript" charset="utf-8" src="./node_modules/clappr/dist/clappr.min.js"> </script>
-   <script type="text/javascript" charset="utf-8" src="./node_modules/three.js/build/three.min.js"> </script>
-   <script type="text/javascript" charset="utf-8" src="./playback360.js"> </script>
+   <script type="text/javascript" charset="utf-8" src="./dist/clappr-video360.min.js"> </script>
    <script type="text/javascript" charset="utf-8">
-var p = new Clappr.Player({
-    source: 'http://thiago.me/360/starwars.mp4#360',
+ p = new Clappr.Player({
+    source: 'http://thiago.me/demo-360/cool.mp4',
     height: 529,
     width: 940,
     plugins: {
-        playback: [Playback360]
+        container: [Video360]
     },
     parentId: '#player',
 });

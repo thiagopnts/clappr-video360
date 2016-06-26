@@ -1,5 +1,4 @@
-# 360 Video
-:warning: THIS IS A HIGHLY EXPERIMENTAL PLUGIN :warning:
+# clappr-video360
 
 
 <img src="360.gif" height="480"></img>
@@ -7,9 +6,10 @@
 
 [Demo](https://thiago.me/clappr-360)
 
-360 Video is a plugin for playing 360 videos with Clappr, just like in Facebook.
+clappr-video360 is a plugin for playing 360 videos with Clappr.
 
-It was tested on Chrome, Firefox and Safari only.
+It's built on top of [Kaleidoscope](https://github.com/thiagopnts/kaleidoscope), so it supports
+the same browsers the lib supports.
 
 ### Building:
 
@@ -19,17 +19,22 @@ $ npm run build
 ```
 
 ### Using:
-With the scripts in your page do:
+
+Add the library with Clappr to your page:
+```html
+<script type="text/javascript" charset="utf-8" src="node_modules/clappr/dist/clappr.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="node_modules/clappr-video360/dist/clappr-video360.min.js"> </script>
+```
+
+Then:
 ```javascript
 var p = new Clappr.Player({
-    source: 'starwars.mp4#360',
+    source: 'your-equirectangular-video.mp4',
     plugins: {
-        playback: [Playback360]
+        container: [Video360],
     },
     parentId: '#player',
 });
-// for a better 360 experience, disable clappr's click_to_pause plugin
+// for better usability, disable clappr's click_to_pause plugin
 p.getPlugin('click_to_pause').disable();
 ```
-
-Use the `#360` hash to tell the plugin that your `.mp4` is 360 compatible.
