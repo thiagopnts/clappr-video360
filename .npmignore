@@ -1,0 +1,10 @@
+360.gif
+index.html
+.*.swp
+._*
+.DS_Store
+.git
+.hg
+.npmrc
+npm-debug.log
+
