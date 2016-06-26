@@ -1,12 +1,12 @@
 # clappr-video360
-
+clappr-video360 is a plugin for playing 360 videos with Clappr.
 
 <img src="360.gif" height="360" width="640"></img>
 
 
 [Demo](https://thiago.me/clappr-360)
 
-clappr-video360 is a plugin for playing 360 videos with Clappr.
+
 
 It's built on top of [Kaleidoscope](https://github.com/thiagopnts/kaleidoscope), so it supports
 the same browsers the lib supports.
@@ -19,7 +19,7 @@ $ npm run build
 ```
 
 ### Using:
-Grap the code:
+Get the code:
 ```bash
 $ npm install clappr clappr-video360
 ```
