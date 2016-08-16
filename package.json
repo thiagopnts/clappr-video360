@@ -4,8 +4,8 @@
   "description": "360 video plugin for Clappr",
   "main": "dist/clappr-video360.min.js",
   "dependencies": {
-    "kaleidoscopejs": "0.0.1",
-    "clappr": "^0.2.57"
+    "kaleidoscopejs": "0.0.7",
+    "clappr": "0.2.57"
   },
   "devDependencies": {
     "babel-core": "^6.7.6",
