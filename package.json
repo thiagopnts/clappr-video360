@@ -4,13 +4,13 @@
   "description": "360 video plugin for Clappr",
   "main": "dist/clappr-video360.min.js",
   "dependencies": {
-    "kaleidoscopejs": "0.0.7",
+    "kaleidoscopejs": "^1.0.13",
     "clappr": "0.2.57"
   },
   "devDependencies": {
     "babel-core": "^6.7.6",
     "babel-loader": "^6.2.4",
-    "babel-preset-es2015-rollup": "^1.1.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
     "rollup": "^0.33.0",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-commonjs": "^3.0.2",
@@ -18,7 +18,8 @@
     "rollup-plugin-strip": "^1.1.1",
     "rollup-plugin-uglify": "^1.0.1",
     "sinon": "^1.17.3",
-    "uglify-js": "^2.6.4"
+    "uglify-js": "^2.6.4",
+    "webpack": "^1.14.0"
   },
   "scripts": {
     "build": "node_modules/.bin/rollup -c",

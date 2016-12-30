@@ -8,7 +8,7 @@ export default class Video360 extends ContainerPlugin {
     this.listenTo(this.container, 'container:fullscreen', this.updateSize);
     let {height, width, autoplay} = container.options;
     container.playback.el.setAttribute('crossorigin', 'anonymous');
-    this.viewer = new Video({height, width, container: container.el, video: container.playback.el});
+    this.viewer = new Video({height, width, container: container.el, source: container.playback.el});
     this.viewer.render();
   }
 

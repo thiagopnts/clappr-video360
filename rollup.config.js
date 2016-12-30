@@ -10,6 +10,9 @@ export default {
   entry: 'src/index.js',
   external: ['clappr'],
   globals: {'clappr': 'Clappr'},
+  acorn: {
+    allowReserved: true,
+  },
   plugins: [
     nodeResolve({
       jsnext: true,
