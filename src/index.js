@@ -12,6 +12,10 @@ export default class Video360 extends ContainerPlugin {
     this.viewer.render();
   }
 
+  get name() {
+    return 'Video360';
+  }
+
   updateSize() {
     setTimeout(() =>
       this.viewer.renderer.setSize({height: this.container.$el.height(), width: this.container.$el.width()})
