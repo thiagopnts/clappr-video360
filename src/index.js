@@ -18,7 +18,7 @@ export default class Video360 extends ContainerPlugin {
 
   updateSize() {
     setTimeout(() =>
-      this.viewer.renderer.setSize({height: this.container.$el.height(), width: this.container.$el.width()})
+      this.viewer.setSize({height: this.container.$el.height(), width: this.container.$el.width()})
     , 250)
   }
 }
