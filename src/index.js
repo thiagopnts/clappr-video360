@@ -1,5 +1,5 @@
 
-import kaleidoscopejs from 'kaleidoscopejs';
+import {Video} from 'kaleidoscopejs';
 import {ContainerPlugin, Mediator, Events} from 'clappr';
 
 export default class Video360 extends ContainerPlugin {
@@ -12,7 +12,7 @@ export default class Video360 extends ContainerPlugin {
     container.el.addEventListener("touchmove", function(event) {
       event.preventDefault();
     }, false);
-    this.viewer = new kaleidoscopejs.Video({height: isNaN(height) ? 300 : height, width: isNaN(width) ? 400 : width, container: this.container.el, source: this.container.playback.el});
+    this.viewer = new Video({height: isNaN(height) ? 300 : height, width: isNaN(width) ? 400 : width, container: this.container.el, source: this.container.playback.el});
     this.viewer.render();
   }
 

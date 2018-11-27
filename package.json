@@ -3,26 +3,47 @@
   "version": "0.0.5",
   "description": "360 video plugin for Clappr",
   "main": "dist/clappr-video360.min.js",
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "env": {
+      "production": {
+        "presets": [
+          "minify"
+        ]
+      }
+    },
+    "plugins": [
+      "@babel/plugin-external-helpers"
+    ]
+  },
   "dependencies": {
     "kaleidoscopejs": "^1.0.16",
     "clappr": "0.2.57"
   },
   "devDependencies": {
-    "babel-core": "^6.7.6",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015-rollup": "^3.0.0",
-    "rollup": "^0.33.0",
-    "rollup-plugin-babel": "^2.6.1",
-    "rollup-plugin-commonjs": "^3.0.2",
-    "rollup-plugin-node-resolve": "^1.7.1",
-    "rollup-plugin-strip": "^1.1.1",
-    "rollup-plugin-uglify": "^1.0.1",
-    "sinon": "^1.17.3",
-    "uglify-js": "^2.6.4",
-    "webpack": "^1.14.0"
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "babel-preset-minify": "^0.5.0",
+    "rollup": "^0.67.0",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-strip": "^1.2.0",
+    "rollup-plugin-uglify": "^6.0.0",
+    "sinon": "^7.1.1",
+    "uglify-js": "^3.4.9",
+    "webpack": "^3.11.0"
   },
   "scripts": {
-    "build": "node_modules/.bin/rollup -c",
+    "build": "BABEL_ENV=production rollup -c && cat dist/clappr-video360.js | uglifyjs -m -c > dist/clappr-video360.min.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
