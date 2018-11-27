@@ -4,7 +4,7 @@ clappr-video360 is a plugin for playing 360 videos with Clappr.
 <img src="360.gif" height="360" width="640"></img>
 
 
-[Demo](https://thiago.me/clappr-360)
+[Demo](http://thiago.me/clappr-video360/)
 
 
 
