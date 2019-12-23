@@ -1,5 +1,5 @@
 
-import {Video} from 'kaleidoscopejs';
+import {Video} from '@thiagopnts/kaleidoscope';
 import {ContainerPlugin, Mediator, Events} from 'clappr';
 
 export default class Video360 extends ContainerPlugin {
