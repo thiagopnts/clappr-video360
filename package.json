@@ -1,6 +1,6 @@
 {
   "name": "clappr-video360",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "360 video plugin for Clappr",
   "main": "dist/clappr-video360.min.js",
   "babel": {
