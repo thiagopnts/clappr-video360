@@ -8,6 +8,8 @@ export default class Video360 extends ContainerPlugin {
     Mediator.on(`${this.options.playerId}:${Events.PLAYER_RESIZE}`, this.updateSize, this);
     let {height, width, autoplay} = container.options;
     container.playback.el.setAttribute('crossorigin', 'anonymous');
+    container.playback.el.setAttribute('preload', 'metadata');
+    container.playback.el.setAttribute('playsinline', 'true');
     container.el.style.touchAction = "none";
     container.el.addEventListener("touchmove", function(event) {
       event.preventDefault();
