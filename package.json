@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "@thiagopnts/kaleidoscope": "^1.1.1",
+    "kaleidoscopejs": "^1.1.1",
     "clappr": "0.2.57"
   },
   "devDependencies": {
