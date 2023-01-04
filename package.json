@@ -40,7 +40,7 @@
     "rollup-plugin-uglify": "^6.0.0",
     "sinon": "^7.1.1",
     "uglify-js": "^3.4.9",
-    "webpack": "^3.11.0"
+    "webpack": "^5.75.0"
   },
   "scripts": {
     "build": "BABEL_ENV=production rollup -c && cat dist/clappr-video360.js | uglifyjs -m -c > dist/clappr-video360.min.js",
